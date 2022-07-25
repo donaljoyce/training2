@@ -1,0 +1,18 @@
+## find the smallest and largest
+l=[]
+n=int(input("enter no: of elements"))
+print("enter elements")
+for _ in range(n):
+    l.append(int(input()))
+    
+s=l[0]
+lg=l[0]
+
+for i in l:
+    if(s>i):
+        s=i 
+    if(lg<i):
+        lg=i
+
+print("largest =",lg,"\n")
+print("smallest=",s)
