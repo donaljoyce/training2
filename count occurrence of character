@@ -1,0 +1,11 @@
+## count the occurence of each character
+str1=input("enter the string\n")
+dictnry={}
+for i in str1:
+    if i in dictnry:
+        dictnry[i]+=1 
+    else:
+        dictnry[i]=1 
+
+for j in dictnry:
+    print(j," occurs ",dictnry[j]," times\n")
