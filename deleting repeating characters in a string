@@ -1,0 +1,25 @@
+#delete repeating characters from string 
+
+def remv(str1):
+    l=len(str1)
+    i=1
+    while(i<l):
+        
+        if(str1[i] in str1[:i]):
+            if (i!=len(str1)-1):
+                str1=str1[:i]+str1[i+1:]
+                l=len(str1)
+            else:
+                str1=str1[:i]
+                l=len(str1)
+        else:
+            i=i+1
+    
+    return str1
+
+
+str2=input("enter string\n")
+str_r=remv(str2)
+    
+
+print(str_r)
